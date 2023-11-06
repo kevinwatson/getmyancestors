@@ -1,0 +1,13 @@
+version: "3.4"
+
+# usage: docker-compose run console bash
+
+services:
+  console:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/home/getmyancestors
+    stdin_open: true
+    tty: true
